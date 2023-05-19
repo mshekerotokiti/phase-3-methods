@@ -13,15 +13,14 @@ def greet_with_default(name= "programmer")
 end
 
 def add (num1, num2)
-      num1 + num2
+     sum=num1 + num2
 end
 
 def halve (num)
-   if num.is_a ? Integer
-     num / 2
-   else 
-    nil
+   if num.class != Integer
+    return nil
    end
+   half=num/2
 end
 
 print_halve = halve("me")
